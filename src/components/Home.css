@@ -1,0 +1,47 @@
+.custom-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+
+.custom-menu a {
+    padding: 12px;
+    list-style: none;
+    text-decoration: none;
+    color: #dad01c;
+    font-size: 20px;
+}
+
+.section-heading {
+    padding: 10px;
+}
+
+.home-section {
+    margin-top: 10px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.indent {
+    padding: 2px;
+}
+
+.wishlist-count {
+    color: #fff;
+}
+
+.feature-text {
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.feature-wrapper{
+    min-height: 90px;
+}
+.footer-color{
+    background-color: rgb(33 37 41);
+    color: #dad01c;
+}
