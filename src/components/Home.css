@@ -45,3 +45,9 @@
     background-color: rgb(33 37 41);
     color: #dad01c;
 }
+.about-rows{
+    padding-top: 15px;
+}
+.last-row{
+    padding-bottom: 15px;
+}

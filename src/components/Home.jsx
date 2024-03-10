@@ -6,6 +6,7 @@ import { getHotels } from '../services/hotelService';
 import Popular from './Popular';
 import { useDispatch, useSelector } from 'react-redux';
 import { addWishList } from '../utils/wishListSlice';
+import HomeSlider from './HomeSliderComponent';
 // import { HotelService } from '../services';
 
 
@@ -31,10 +32,14 @@ const Home = () => {
 
 
     return (
+        <>
+        <HomeSlider/>
         <Container className='home-section'>
             <Popular popular={hotels} handleAddWishList={handleAddWishList}/>
             <div className='section-heading'><h1>New Arrivals</h1></div>
         </Container>
+        </>
+
     )
 }
 
