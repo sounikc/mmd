@@ -39,6 +39,7 @@ const Home = () => {
             <div className='section-heading'><h1>New Arrivals</h1></div>
         </Container>
         </>
+
     )
 }
 

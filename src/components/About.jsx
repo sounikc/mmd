@@ -6,7 +6,6 @@ const About = () => {
     return (
         <>
             <Container>
-
                 {/* Columns are always 50% wide, on mobile and desktop */}
                 <Row className='about-rows'>
                     <Col xs={6}><img height="300px" src="https://promos.makemytrip.com/images/independenceDay-Thailand-01072022.webp" /></Col>
@@ -29,5 +28,4 @@ const About = () => {
         </>
     )
 }
-
 export default About;
