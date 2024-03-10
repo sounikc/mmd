@@ -1,28 +1,30 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import  NavbarComponent  from './components/NavbarComponent';
+import Home from './components/Home';
+import About from './components/About';
+import Reviews from './components/Reviews';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
+import WishList from './components/WishList';
+import Footer from './components/Footer';
 
 function App() {
   return (
+    <Provider store={appStore}>
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <NavbarComponent/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='about' element={<About/>}/>
+        <Route path='reviews' element={<Reviews/>}/>
+        <Route path='wishlist' element={<WishList/>}/>
+      </Routes>
+      <Footer/>
     </div>
+    </BrowserRouter>
+    </Provider>
   );
 }
 
