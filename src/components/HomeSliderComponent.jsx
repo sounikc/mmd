@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function HomeSlider() {
   return (
     <Carousel>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item>
         <img text="First slide" src="./public/hotelbanner1.jpg"/>
         <Carousel.Caption>
           <h3>Domestic Destination</h3>

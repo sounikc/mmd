@@ -12,9 +12,9 @@ const WishList = ()=>{
     }
     return (
         <>
-        {wishLists.map((wishList, index)=>(
+        {wishLists.length > 0 ? wishLists.map((wishList, index)=>(
             <WishListItem key={wishList.name} index={index} wishList={wishList} handleRemoveWishlist={handleRemoveWishlist}/>
-        ))}
+        )):<>No Wishlist</>}
         </>
     )
 }
