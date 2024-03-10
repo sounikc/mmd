@@ -9,6 +9,7 @@ import appStore from './utils/appStore';
 import WishList from './components/WishList';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <Provider store={appStore}>

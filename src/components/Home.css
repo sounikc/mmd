@@ -47,7 +47,29 @@
 }
 .about-rows{
     padding-top: 15px;
+    text-align: left;
+    align-items: center;
+}
+.about-img img{
+    width:100%;
 }
 .last-row{
     padding-bottom: 15px;
+}
+.reviews-wrapper{
+    padding: 20px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #eddcdc !important;
+}
+.reviews-wrapper{
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.carousel-item{
+    height:50vh;
 }
